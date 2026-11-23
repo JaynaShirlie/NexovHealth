@@ -12,6 +12,18 @@ A caller talks to **Aria**, an AI receptionist, to check a doctor's availability
 | Frontend | Vite + React + TypeScript, hand-written CSS |
 | Data | SQLite mock data (8 doctors, 30 minute slots for the coming week) |
 
+## Screenshots
+
+**Front desk dashboard.** Live doctor availability, appointments and the voice agent panel.
+
+![Front desk dashboard](docs/screenshots/dashboard.png)
+
+**During a call.** The phone docks beside the dashboard. Here Aria has just booked a cardiology slot (9:00 AM is gone from Dr. Sharma's row) and offers to reuse the number the caller confirmed earlier.
+
+![Live call with Aria](docs/screenshots/live-call.png)
+
+<p align="center"><b>Mobile</b><br><img src="docs/screenshots/mobile.png" alt="Mobile layout" width="320"></p>
+
 ## Run it
 
 You need Python 3.10+, Node 18+, an [ElevenLabs API key](https://elevenlabs.io/app/settings/api-keys) (Text to Speech and Speech to Text permissions), and a [Groq API key](https://console.groq.com/keys) and/or a [Gemini API key](https://aistudio.google.com/apikey). Groq replies fastest; with both, Gemini takes over if Groq is rate-limited.
